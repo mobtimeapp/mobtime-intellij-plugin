@@ -11,6 +11,10 @@ changelog {
   version = '0.0.1'
 }
 
+runPluginVerifier {
+  ideVersions(pluginVerifierIdeVersions)
+}
+
 group 'org.intellij.sdk'
 version '2.0.1'
 
