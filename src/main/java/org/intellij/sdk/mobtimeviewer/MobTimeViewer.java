@@ -32,6 +32,10 @@ public class MobTimeViewer {
         browser.loadURL("https://mobti.me/");
     }
 
+    public JBCefBrowser getBrowser() {
+        return browser;
+    }
+
     public JComponent getContent() {
 
         CefDisplayHandler displayHandler = new CefDisplayHandler() {
