@@ -74,7 +74,7 @@ jobs:
   # Requires org.intellij.sdk.mobtimeviewer.test job to be passed
   build:
     name: Build
-    needs: org.intellij.sdk.mobtimeviewer.test
+    needs: test
     runs-on: ubuntu-latest
     outputs:
       name: ${{ steps.properties.outputs.name }}
