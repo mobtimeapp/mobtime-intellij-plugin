@@ -18,10 +18,9 @@ public class MobTimeToolWindowFactory implements ToolWindowFactory {
      */
 
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
-        MobtimeViewer mobtimeViewer = new MobtimeViewer(toolWindow, project);
+        MobTimeViewer mobtimeViewer = new MobTimeViewer(toolWindow, project);
         ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
-        Content content = contentFactory.createContent(mobtimeViewer.getContent(), "Mobtime", false);
+        Content content = contentFactory.createContent(mobtimeViewer.getContent(), "MobTime", false);
         toolWindow.getContentManager().addContent(content);
-        System.out.println("Set the content");
     }
 }

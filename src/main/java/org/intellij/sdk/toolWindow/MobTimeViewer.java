@@ -17,14 +17,14 @@ import org.cef.handler.CefDisplayHandler;
 import javax.swing.*;
 import java.awt.*;
 
-public class MobtimeViewer {
+public class MobTimeViewer {
     private final JBCefBrowser browser;
     private final ToolWindow toolWindow;
     private final Project project;
     private boolean hasStarted = false;
     private String oldTitle;
 
-    public MobtimeViewer(ToolWindow _toolWindow, Project _project) {
+    public MobTimeViewer(ToolWindow _toolWindow, Project _project) {
         toolWindow = _toolWindow;
         project = _project;
 
