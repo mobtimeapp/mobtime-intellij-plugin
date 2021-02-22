@@ -1,19 +1,28 @@
 <idea-plugin>
-    <id>com.github.jstruk.mobtimeplugin</id>
-    <name>mobtime-plugin</name>
-    <vendor>jstruk</vendor>
+<id>org.intellij.sdk.MobTime</id>
+    <name>MobTime</name>
+    <vendor>jstruk+friends@Vehikl</vendor>
 
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
-    <depends>com.intellij.modules.platform</depends>
+    <description>
+        <![CDATA[
+      Plugin for IntelliJ-based IDEs that allows the use of Mobti.me directly inside the IDE
+      for structuring mob programming.
+    ]]>
+    </description>
+    <change-notes>
+        <![CDATA[
+      <ul>
+        <li><b>2.0.1</b> Update Icon</li>
+        <li><b>1.0.0</b> Release 1.0.0 </li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <!-- Text to display as company information on Preferences/Settings | Plugin page -->
+    <vendor url="https://mobti.me/">Mobtime</vendor>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.jstruk.mobtimeplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.jstruk.mobtimeplugin.services.MyProjectService"/>
+        <toolWindow id="MobTime" secondary="true" icon="AllIcons.General.Modified" anchor="right"
+                    factoryClass="org.intellij.sdk.toolWindow.MobTimeToolWindowFactory"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.jstruk.mobtimeplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
