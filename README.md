@@ -1,38 +1,55 @@
-# mobtime-plugin
+# MobTime Plugin
 
 ![Build](https://github.com/JStruk/mobtime-plugin/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/16137.svg)](https://plugins.jetbrains.com/plugin/16137-mobtime)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/16137.svg)](https://plugins.jetbrains.com/plugin/16137-mobtime)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Verify the [pluginGroup](/gradle.properties), [plugin ID](/src/main/resources/META-INF/plugin.xml) and [sources package](/src/main/kotlin).
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the Plugin ID in the above README badges.
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+
+- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html)
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+Implements the mob timer from https://mobti.me/ inside a window in IntelliJ IDEs. 
+Strcuture your mob programming without ever leaving the IDE!
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+<img src="./assets/plugin1.png"/>
+
+Alert when timer is up: 
+<div>
+<img src="./assets/plugin2.png"/>
+
+
 <!-- Plugin description end -->
 
 ## Installation
 
 - Using IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "mobtime-plugin"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "mobtime"</kbd> >
   <kbd>Install Plugin</kbd>
+   - Please note the plugin is temporarily unavailable on the marketplace until a stable release is deployed. For now, you can use the `Install From Disk` option to install the plugin from the `.zip` downloaded from the versions page [here](https://plugins.jetbrains.com/plugin/16137-mobtime/versions)
   
 - Manually:
 
   Download the [latest release](https://github.com/JStruk/mobtime-plugin/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
+## Development
+
+- Setup for local development
+  - Requirements:
+    - JDK 14
+    - JRE 1.8+
+    - IntelliJ IDEA
+    - Custom runtime for IDEA [Instructions here](https://youtrack.jetbrains.com/issue/IDEA-231833?_ga=2.48638502.1426120811.1614027119-951169486.1614027118#focus=streamItem-27-3993099.0-0)
+
+## Known Issues
+ - This plugin requires JCEF support in your IDE. This was released as part of IntelliJ version 2020.2. You may encounter errors such as:
+   - `JCEF is not supported in this env or failed to initialize `
+   - `JCEF runtime library is not a JBR module`
+- The alert logic is based off the webpage title. Ideally we would have a handler for notifications sent from the webpage and handle them properly. If this is possible in CEF, please feel free to put up an issue or a PR with a possible solution :) 
+  
+  Please post an issue on the repo if you encounter any bugs (especially relating to JCEF). It's appreciated.
 
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
