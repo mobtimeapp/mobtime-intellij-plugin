@@ -1,4 +1,4 @@
-package org.intellij.sdk.toolWindow;
+package org.intellij.sdk.mobtimeviewer;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.MessageType;

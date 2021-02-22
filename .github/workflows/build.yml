@@ -1,6 +1,6 @@
 # GitHub Actions Workflow created for testing and preparing the plugin release in following steps:
 # - validate Gradle Wrapper,
-# - run test and verifyPlugin tasks,
+# - run org.intellij.sdk.mobtimeviewer.test and verifyPlugin tasks,
 # - run buildPlugin task and prepare artifact for the further tests,
 # - run IntelliJ Plugin Verifier,
 # - create a draft release.
@@ -31,7 +31,7 @@ jobs:
       - name: Gradle Wrapper Validation
         uses: gradle/wrapper-validation-action@v1.0.3
 
-  # Run verifyPlugin and test Gradle tasks
+  # Run verifyPlugin and org.intellij.sdk.mobtimeviewer.test Gradle tasks
   test:
     name: Test
     needs: gradleValidation
@@ -71,10 +71,10 @@ jobs:
         run: ./gradlew verifyPlugin
 
   # Build plugin with buildPlugin Gradle task and provide the artifact for the next workflow jobs
-  # Requires test job to be passed
+  # Requires org.intellij.sdk.mobtimeviewer.test job to be passed
   build:
     name: Build
-    needs: test
+    needs: org.intellij.sdk.mobtimeviewer.test
     runs-on: ubuntu-latest
     outputs:
       name: ${{ steps.properties.outputs.name }}

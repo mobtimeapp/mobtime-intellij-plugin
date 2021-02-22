@@ -23,6 +23,6 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="MobTime" secondary="true" icon="AllIcons.General.Modified" anchor="right"
-                    factoryClass="org.intellij.sdk.toolWindow.MobTimeToolWindowFactory"/>
+                    factoryClass="org.intellij.sdk.mobtimeviewer.MobTimeToolWindowFactory"/>
     </extensions>
 </idea-plugin>
