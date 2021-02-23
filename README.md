@@ -9,7 +9,7 @@
 
 <!-- Plugin description -->
 Implements the mob timer from https://mobti.me/ inside a window in IntelliJ IDEs. 
-Strcuture your mob programming without ever leaving the IDE!
+Structure your mob programming without ever leaving the IDE!
 
 
 <img src="./assets/plugin1.png"/>
