@@ -42,6 +42,21 @@ Alert when timer is up:
     - JRE 1.8+
     - IntelliJ IDEA
     - Custom runtime for IDEA [Instructions here](https://youtrack.jetbrains.com/issue/IDEA-231833?_ga=2.48638502.1426120811.1614027119-951169486.1614027118#focus=streamItem-27-3993099.0-0)
+  
+## Deploying
+   - To run locally: 
+     - Within IntelliJ IDEA:
+       - <kbd>IntelliJ IDEA</kbd> > <kbd>Run</kbd> > <kbd>Edit Configurations</kbd> > <kbd>+</kbd> > <kbd>Gradle</kbd> 
+       - `Gradle Project: mobtime-plugin`
+       - `Task: runIde`
+       - <kbd>Apply</kbd> > <kbd>OK</kbd>
+      - From command line: 
+        - Inside root folder: `./gradlew runIde`
+   - To compile `mobtime-plugin-{version}.zip` for installing plugin
+      - Inside root folder: `./gradlew buildPlugin`
+      - Find `.zip` file at `mobtime-plugin/build/distributions`
+
+ 
 
 ## Known Issues
  - This plugin requires JCEF support in your IDE. This was released as part of IntelliJ version 2020.2. You may encounter errors such as:
