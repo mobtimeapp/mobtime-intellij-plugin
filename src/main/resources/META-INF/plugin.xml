@@ -12,11 +12,14 @@
     <change-notes>
         <![CDATA[
       <ul>
-        <li><b>2.0.1</b> Update Icon</li>
+        <li><b>2.0.2</b> Stable Release </li>
+        <li><b>2.0.1</b> Update Icon </li>
         <li><b>1.0.0</b> Release 1.0.0 </li>
       </ul>
     ]]>
     </change-notes>
+
+    <depends>com.intellij.modules.lang</depends>
 
     <!-- Text to display as company information on Preferences/Settings | Plugin page -->
     <vendor url="https://mobti.me/">Mobtime</vendor>
