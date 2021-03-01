@@ -25,7 +25,6 @@ Alert when timer is up:
   
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "mobtime"</kbd> >
   <kbd>Install Plugin</kbd>
-   - Please note the plugin is temporarily unavailable on the marketplace until a stable release is deployed. For now, you can use the `Install From Disk` option to install the plugin from the `.zip` downloaded from the versions page [here](https://plugins.jetbrains.com/plugin/16137-mobtime/versions)
   
 - Manually:
 
