@@ -5,11 +5,9 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/16137.svg)](https://plugins.jetbrains.com/plugin/16137-mobtime)
 
 
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html)
-
 <!-- Plugin description -->
 Implements the mob timer from https://mobti.me/ inside a window in IntelliJ IDEs. 
-Structure your mob programming without ever leaving the IDE!
+Structure your mob programming without ever leaving the IDE! <h2> Get it from the JetBrains Plugin Marketplace [here!](https://plugins.jetbrains.com/plugin/16137-mobtime) </h2>
 
 
 <img src="./assets/plugin1.png"/>
@@ -27,12 +25,11 @@ Alert when timer is up:
   
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "mobtime"</kbd> >
   <kbd>Install Plugin</kbd>
-   - Please note the plugin is temporarily unavailable on the marketplace until a stable release is deployed. For now, you can use the `Install From Disk` option to install the plugin from the `.zip` downloaded from the versions page [here](https://plugins.jetbrains.com/plugin/16137-mobtime/versions)
   
 - Manually:
 
   Download the [latest release](https://github.com/JStruk/mobtime-plugin/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd> (This is possibly broken right now)
 
 ## Development
 
