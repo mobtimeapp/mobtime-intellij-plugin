@@ -30,6 +30,10 @@ public class ChromiumDisplayHandler implements CefDisplayHandler {
         handleTitleChange(title);
     }
 
+    public boolean onCursorChange(CefBrowser cefBrowser, int cursor) {
+        return false;
+    }
+
     @Override
     public boolean onTooltip(CefBrowser cefBrowser, String s) {
         return false;
