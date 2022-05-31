@@ -12,7 +12,7 @@ changelog {
 }
 
 group 'org.intellij.sdk'
-version '3.0.0'
+version '3.1.0'
 
 sourceCompatibility = 1.8
 
@@ -23,7 +23,7 @@ repositories {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 // Need version 2020.2 for JCEF support
 intellij {
-  version = '2021.2'
+  version = '2022.1'
 }
 
 buildSearchableOptions {
@@ -33,7 +33,7 @@ buildSearchableOptions {
 patchPluginXml {
   version = project.version
   sinceBuild = '202'
-  untilBuild = '212.*'
+  untilBuild = '222.*'
 }
 
 dependencies {
