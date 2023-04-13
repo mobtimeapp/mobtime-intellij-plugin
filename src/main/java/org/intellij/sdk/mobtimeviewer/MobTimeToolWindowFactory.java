@@ -2,6 +2,7 @@
 
 package org.intellij.sdk.mobtimeviewer;
 
+import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
@@ -19,7 +20,8 @@ public class MobTimeToolWindowFactory implements ToolWindowFactory {
 
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
         MobTimeViewer mobtimeViewer = new MobTimeViewer(toolWindow, project);
-        ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
+//        ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
+        ContentFactory contentFactory = ApplicationManager.getApplication().getService(ContentFactory.class);
         Content content = contentFactory.createContent(mobtimeViewer.getContent(), "MobTime", false);
         toolWindow.getContentManager().addContent(content);
     }
