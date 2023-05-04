@@ -12,6 +12,7 @@
     <change-notes>
         <![CDATA[
       <ul>
+        <li><b>3.5.0</b> Remove version constraints </li>
         <li><b>3.4.0</b> Update dependencies to work with new IntelliJ versions </li>
         <li><b>3.3.0</b> Support new & future versions of IntelliJ </li>
         <li><b>3.2.0</b> Really Support IntelliJ 2022.* and maybe 2023.*? </li>
@@ -25,7 +26,7 @@
     ]]>
     </change-notes>
 
-    <idea-version since-build="202.6397.25"/>
+    <depends>com.intellij.modules.platform</depends>
 
     <!-- Text to display as company information on Preferences/Settings | Plugin page -->
     <vendor url="https://mobti.me/">Mobtime</vendor>
