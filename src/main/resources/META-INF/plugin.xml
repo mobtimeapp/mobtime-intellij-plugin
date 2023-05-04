@@ -12,6 +12,7 @@
     <change-notes>
         <![CDATA[
       <ul>
+        <li><b>3.5.1</b> Do not generate until-build </li>
         <li><b>3.5.0</b> Remove version constraints </li>
         <li><b>3.4.0</b> Update dependencies to work with new IntelliJ versions </li>
         <li><b>3.3.0</b> Support new & future versions of IntelliJ </li>
